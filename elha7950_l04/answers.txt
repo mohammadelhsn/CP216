@@ -1,0 +1,13 @@
+-------------------------------------------------------
+answers.txt
+-------------------------------------------------------
+Author: Mohammad El-Hassan
+ID: 169067950
+Email: elha7950@mylaurier.ca
+Date: 2025-02-14
+-------------------------------------------------------
+Answers for Lab 4
+-------------------------------------------------------
+Q2:
+Yes, we can determine the number of bytes in the list without using the loop by calculating the difference 
+between the start and end addresses of the data.
