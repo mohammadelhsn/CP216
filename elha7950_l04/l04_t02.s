@@ -5,7 +5,7 @@ l04_t02.s
 Author:  Mohammad El-Hassan
 ID:      169067950
 Email:   elha7950@mylaurier.ca
-Date:    2024-02-14
+Date:    2024/02/14
 -------------------------------------------------------
 A simple list demo program. Traverses all elements of an integer list.
 r0: temp storage of value in list

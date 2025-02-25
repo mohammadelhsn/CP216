@@ -5,7 +5,7 @@ l02_t02.s
 Author: Mohammad El-Hassan
 ID: 169067950
 Email: elha7950@mylaurier.ca
-Date: 01/30/2025
+Date: 2025/01/30
 -------------------------------------------------------
 Assign to and add contents of registers.
 -------------------------------------------------------

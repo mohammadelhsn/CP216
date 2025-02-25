@@ -1,11 +1,11 @@
 /*
 -------------------------------------------------------
-count3.s
+l03_t03.s
 -------------------------------------------------------
-Author:
-ID:
-Email:
-Date:
+Author: Mohammad El-Hassan
+ID: 169067950
+Email: elha7950@mylaurier.ca
+Date: 2024/02/07
 -------------------------------------------------------
 An infinite loop program with a timer delay and
 LED display.
