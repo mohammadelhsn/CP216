@@ -15,9 +15,12 @@ Does a running total of an integer list.
 .global _start
 _start:
 
-ldr    r1, =Data    // Store address of start of list
-ldr    r2, =_Data   // Store address of end of list
-bl     list_total   // Call subroutine - total returned in r0
+// Store address of start of list
+ldr    r1, =Data
+// Store address of end of list
+ldr    r2, =_Data   
+// Call subroutine - total returned in r0
+bl     list_total   
 
 _stop:
 b      _stop

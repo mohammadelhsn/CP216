@@ -50,7 +50,7 @@ Uses:
   r4 - address of value to process
 -------------------------------------------------------
 */
-stmfd   sp!, {fp}       // preserve frame pointer
+stmfd  sp!, {fp}       // preserve frame pointer
 mov    fp, sp           // Save current stack top to frame pointer
 // allocate local storage (none)
 stmfd  sp!, {r0-r4}     // preserve other registers
@@ -79,8 +79,8 @@ str    r3, [r0]         // store maximum
 
 ldmfd  sp!, {r0-r4}     // pop preserved registers
 // deallocate local storage (none was allocated)
-ldmfd   sp!, {fp}       // pop frame pointer
-bx      lr              // return from subroutine
+ldmfd  sp!, {fp}       // pop frame pointer
+bx     lr              // return from subroutine
 
 //-------------------------------------------------------
 .data  // Data section

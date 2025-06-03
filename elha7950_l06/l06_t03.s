@@ -43,7 +43,7 @@ bl      FindCommon
 add     sp, sp, #16     // Release 4 parameters (4x4 bytes) from stack
 
 _stop:
-b      _stop            // Infinite loop to stop execution
+b       _stop            // Infinite loop to stop execution
 
 //-------------------------------------------------------
 FindCommon:
@@ -64,14 +64,27 @@ Parameters:
 //=======================================================
 // Prologue: Save registers and get parameters from stack
 //=======================================================
-stmfd   sp!, {fp, lr}   // Save frame pointer and link register
-mov     fp, sp          // Set new frame pointer
-stmfd   sp!, {r0-r5}    // Save working registers
 
-ldr     r0, [fp, #8]    // Load address of first string
-ldr     r1, [fp, #12]   // Load address of second string
-ldr     r2, [fp, #16]   // Load address of common string
-ldr     r3, [fp, #20]   // Load max size of common
+// Save frame pointer and link register
+stmfd   sp!, {fp, lr}   
+
+// Set new frame pointer
+mov     fp, sp        
+
+// Save working registers
+stmfd   sp!, {r0-r5}  
+
+// Load address of the first string
+ldr     r0, [fp, #8]
+
+// Load address of the second string
+ldr     r1, [fp, #12]
+
+// Load address of common string
+ldr     r2, [fp, #16]   
+
+// Load max size of common
+ldr     r3, [fp, #20]   
 
 //=======================================================
 // Common prefix comparison loop
@@ -102,7 +115,6 @@ strb    r4, [r2]        // Store null terminator
 ldmfd   sp!, {r0-r5}    // Restore registers
 ldmfd   sp!, {fp, lr}   // Restore frame pointer and link register
 bx      lr              // Return from subroutine
-
 //-------------------------------------------------------
 .data
 First:

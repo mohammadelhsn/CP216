@@ -58,8 +58,8 @@ Uses:
 //=======================================================
 
 // prologue: save registers and get parameters from stack
-stmfd sp!, {fp, lr}
-add fp, sp, #4      //frame pointer setup
+stmfd   sp!, {fp, lr}
+add     fp, sp, #4      //frame pointer setup
 ldr     r3, [fp, #4]      
 ldr     r2, [fp, #8]      
 ldr     r1, [fp, #12]    
