@@ -1,18 +1,22 @@
 .org 0x1000          // Start at memory location 1000
-
 .text                // Code section
 .global _start
 
 _start:
-    // Initialize registers
-    ldr r0, =Data      // Load the address of the Data list
-    ldr r1, =0x00001500 // Load the starting memory address (0x00001500)
-    ldr r2, =lookup_table  // Load the address of the lookup table
+    /*============= Initialize Registers =============*/ 
+    // Load the address of the Data list
+    ldr r0, =Data    
+    // Load the starting memory address (0x00001500)
+    ldr r1, =0x00001500 
+    // Load the address of the lookup table
+    ldr r2, =lookup_table
+    // Load the end address of the data table
     ldr r5, =_Data
-    // Loop through the Data list
 Loop:
-    ldr r3, [r0], #4  // Load the current value from Data, post-increment r0 (move to next value)
-    ldrb r4, [r2, r3] // Load the corresponding ASCII value from the lookup table (r3 is the index)
+    // Load the current value from Data, post-increment r0 (move to next value)
+    ldr r3, [r0], #4 
+    // Load the corresponding ASCII value from the lookup table (r3 is the index) 
+    ldrb r4, [r2, r3]
     strb r4, [r1], #1  
     cmp r0, r5   
     bne Loop           
