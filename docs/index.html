@@ -50,6 +50,24 @@
 				max-width: 1200px;
 				margin: 0 auto;
 			}
+			.card {
+				background: white;
+				padding: 25px;
+				border-radius: 10px;
+				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+				transition: transform 0.2s ease;
+			}
+
+			.card:hover {
+				transform: translateY(-3px);
+			}
+
+			.card a {
+				text-decoration: none;
+				color: #2a6ddf;
+				font-weight: bold;
+				font-size: 1.1em;
+			}
 			.nav-links {
 				display: flex;
 				gap: 1rem;
@@ -149,6 +167,14 @@
 			body.dark-mode #darkModeToggle:hover {
 				background: #90caf9;
 				color: #000;
+			}
+			body.dark-mode .card {
+				background-color: #1e1e2f;
+				color: #e0e0e0;
+			}
+
+			body.dark-mode .card a {
+				color: #4ea1f7;
 			}
 		</style>
 	</head>
