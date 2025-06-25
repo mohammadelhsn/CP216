@@ -181,6 +181,11 @@
 			body.dark-mode .card a {
 				color: #4ea1f7;
 			}
+
+			.footer-icons a {
+				text-decoration: none;
+				font-size: 1.5rem;
+			}
 		</style>
 	</head>
 	<body>
@@ -217,17 +222,38 @@
 </code></pre>
 			</section>
 
-			<section class="section">
-				<h3>🚀 Topics Covered</h3>
-				<ul>
-					<li>ARMv7 architecture and instruction set</li>
-					<li>Assembly language programming</li>
-					<li>CPU registers, pipeline, interrupts, and exceptions</li>
-					<li>Memory organization & addressing modes</li>
-					<li>Embedded systems, I/O programming and hardware interfacing</li>
-					<li>Debugging via QEMU emulator & real boards</li>
-				</ul>
-			</section>
+			<div class="container my-4" style="max-width: 600px">
+				<button
+					class="btn btn-primary w-100 text-start"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#topicsCollapse"
+					aria-expanded="false"
+					aria-controls="topicsCollapse"
+					style="font-weight: 600; font-size: 1.2rem"
+				>
+					🚀 Topics Covered
+				</button>
+				<div class="collapse mt-3" id="topicsCollapse">
+					<div class="card p-3 shadow-sm">
+						<ul
+							class="mb-0"
+							style="list-style-type: disc; padding-left: 1.5rem"
+						>
+							<li class="mb-2">ARMv7 architecture and instruction set</li>
+							<li class="mb-2">Assembly language programming</li>
+							<li class="mb-2">
+								CPU registers, pipeline, interrupts, and exceptions
+							</li>
+							<li class="mb-2">Memory organization & addressing modes</li>
+							<li class="mb-2">
+								Embedded systems, I/O programming and hardware interfacing
+							</li>
+							<li>Debugging via QEMU emulator & real boards</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
 			<div class="section">
 				<h3>📚 Explore the Docs</h3>
