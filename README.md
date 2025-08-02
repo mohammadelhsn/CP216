@@ -10,6 +10,12 @@
 
 This repository contains my coursework, assignments, and projects for **CP216 - Microprocessors using ARMv7** at **Wilfrid Laurier University**. The course covers fundamentals of microprocessor architecture, programming, and interfacing using the ARMv7 architecture, including instruction sets, assembly language programming, and embedded system concepts.
 
+## Stack
+
+| Technology | Icon                                                                |
+| ---------- | ------------------------------------------------------------------- |
+| Assembly   | ![Assembly](https://go-skill-icons.vercel.app/api/icons?i=assembly) |
+
 ## 📂 Repository Structure
 
 ```bash
