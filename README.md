@@ -40,8 +40,7 @@ CP216/
 ## 🛠️ Technologies
 
 - Programming Language: ARM Assembly
-- Development Environment: Keil MDK, ARM Development Studio
-- Debugging Tools: QEMU Emulator, Real hardware boards
+- Development Environment: CPUlator, VS Code
 - Version Control: Git & GitHub
 
 ## 📌 Notes
